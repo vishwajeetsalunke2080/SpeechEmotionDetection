@@ -1,7 +1,5 @@
 import librosa
-import librosa.display
 import numpy as np
-from IPython.display import Audio
 import keras
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from keras.utils import to_categorical
@@ -86,4 +84,4 @@ def Predict(AudioPath):
         value*=100
         print(emotion, f"{value}")
 
-Predict("./Flat-buyer versus Lodhas Sales Girl - CALL-RECORDING about Lodha Palava City Lodha gets trolled [TubeRipper.com].wav")
+Predict("D:\Work\SpeechEmotionDetection\/angry.wav")
